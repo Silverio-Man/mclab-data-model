@@ -6,6 +6,7 @@
 #define SRC_BUILTINOP_H
 
 #include "Operation.h"
+#include <memory>
 
 namespace Modeling {
 

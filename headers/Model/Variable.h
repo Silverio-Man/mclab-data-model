@@ -7,6 +7,7 @@
 
 #include <string>
 #include "Module.h"
+#include <memory>
 
 namespace Modeling {
 

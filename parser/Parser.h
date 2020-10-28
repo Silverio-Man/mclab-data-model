@@ -7,11 +7,11 @@
 
 #include <string>
 #include <libxml++/libxml++.h>
-#include <Model/Unit.h>
-#include <Model/Module.h>
-#include <Model/BaseType.h>
-#include <Model/BuiltInOp.h>
-#include <Model/Parameter.h>
+#include "../headers/Model/Unit.h"
+#include "../headers/Model/Module.h"
+#include "../headers/Model/BaseType.h"
+#include "../headers/Model/BuiltInOp.h"
+#include "../headers/Model/Parameter.h"
 
 class Parser : public xmlpp::DomParser {
 private:

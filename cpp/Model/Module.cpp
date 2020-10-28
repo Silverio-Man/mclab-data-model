@@ -13,6 +13,7 @@
 #include "StatementOwnerException.cpp"
 #include "AlgorithmStatException.cpp"
 #include "NoIDException.cpp"
+#include <memory>
 
 namespace Modeling {
 

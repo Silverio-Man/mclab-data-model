@@ -5,6 +5,7 @@
 #include "Model/InitAss.h"
 #include "Model/Module.h"
 #include "VarNotInModuleException.cpp"
+#include <memory>
 
 namespace Modeling {
 
