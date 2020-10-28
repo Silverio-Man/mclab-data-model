@@ -5,6 +5,7 @@
 #include "Model/Operation.h"
 #include "Model/OperationArg.h"
 #include "Model/Type.h"
+#include <memory>
 
 namespace Modeling {
 
@@ -43,7 +44,7 @@ namespace Modeling {
 	}
 
 	void Operation::removeArgument(std::shared_ptr<OperationArg> &a) {
-		args.erase(std::remove(args.begin(), args.end(), a), args.end());
+		//args.erase(std::remove(args.begin(), args.end(), a), args.end());
 	}
 
 	const std::vector<std::shared_ptr<OperationArg>> Operation::getArguments() {

@@ -5,14 +5,15 @@
 #include "Parser.h"
 #include <sbml/SBMLTypes.h>
 #include <regex>
-#include <Model/Species.h>
-#include <Model/DirConnection.h>
+#include "../cpp/Model/Species.h"
+#include "../cpp/Model/DirConnection.h"
 #include "../utils/exceptions/NoTypeFoundException.cpp"
 #include "../utils/exceptions/NoUnitFoundException.cpp"
 #include "../utils/exceptions/NoModuleFoundException.cpp"
 #include "../utils/exceptions/NoVariableFoundException.cpp"
 #include "../utils/exceptions/NoModuleConnectionException.cpp"
 #include "../utils/exceptions/NotSupportedException.cpp"
+#include <iostream>
 
 Parser::Parser(const std::string& filepath) {
     std::cout << "Start parsing..." << std::endl;

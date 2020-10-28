@@ -9,6 +9,7 @@
 #include <vector>
 #include "Type.h"
 #include "Statements/StatementOwner.h"
+#include <memory>
 
 namespace Modeling {
 

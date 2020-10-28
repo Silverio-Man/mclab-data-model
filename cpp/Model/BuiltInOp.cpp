@@ -5,6 +5,7 @@
 #include "Model/BuiltInOp.h"
 #include "Model/Type.h"
 #include <iostream>
+#include <memory>
 
 namespace Modeling {
 
