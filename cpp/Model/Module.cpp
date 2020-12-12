@@ -51,6 +51,14 @@ namespace Modeling {
 		return expressions;
 	}
 
+	void Module::addMathMLExpression(std::string expr) {
+		mathMLExpressions.push_back(expr);
+	}
+
+	const std::vector<std::string> Module::getMathMLExpression() {
+		return mathMLExpressions;
+	}
+
 
 	void Module::removeModExpr(std::shared_ptr<Expression> &e) {
 		modExpr.erase(e);

@@ -37,6 +37,7 @@ class Module : public Type, public Statements::StatementOwner {
 	private:
 		std::unordered_set<std::shared_ptr<Expression>> modExpr;
 		std::vector<std::string> expressions;
+		std::vector<std::string> mathMLExpressions; // 
 		std::unordered_set<std::shared_ptr<Variable>> vars;
 		std::unordered_set<std::shared_ptr<UserDefOp>> ops;
 		std::unordered_set<std::shared_ptr<Event>> evs;
@@ -78,6 +79,10 @@ class Module : public Type, public Statements::StatementOwner {
 		void addExpression(std::string expr);
 
 		const std::vector<std::string> getExpression();
+
+		void addMathMLExpression(std::string expr); //
+
+		const std::vector<std::string> getMathMLExpression();
 
 		const std::unordered_set<std::shared_ptr<Expression>> getModExpr();
 
