@@ -12,9 +12,9 @@ namespace Modeling {
 	Literal::Literal(std::shared_ptr<Type> type, std::string val) : Expression(std::move(type)), value(std::move(val)) {
 		std::regex realVal(R"(((\+|-)?[[:digit:]]+)(\.(([[:digit:]]+)?))?((e|E)((\+|-)?)[[:digit:]]+)?)");
 		std::regex intVal(R"((\+|-)?[[:digit:]]+)");
-		if (!((this->type->getName() == "Boolean" and (this->value == "true" or value == "false")) or
-			  (this->type->getName() == "Real" and regex_match(value, realVal)) or
-			  (this->type->getName() == "Integer" and regex_match(value, intVal))))
+		if (!((this->type->getName() == "Boolean" && (this->value == "true" || value == "false")) ||
+			  (this->type->getName() == "Real" && regex_match(value, realVal)) ||
+			  (this->type->getName() == "Integer" && regex_match(value, intVal))))
 			throw LiteralException();
 	}
 

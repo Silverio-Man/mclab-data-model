@@ -148,8 +148,8 @@ namespace Modeling {
 	}
 
 	bool operator==(const Module &m1, const Module &m2) {
-		return m1.name == m2.name and m1.vars == m2.vars and m1.modExpr == m2.modExpr and m1.conns == m2.conns and
-			   m1.evs == m2.evs and m1.algSection == m2.algSection and m1.inits == m2.inits and m1.ops == m2.ops;
+		return m1.name == m2.name && m1.vars == m2.vars && m1.modExpr == m2.modExpr && m1.conns == m2.conns &&
+			   m1.evs == m2.evs && m1.algSection == m2.algSection && m1.inits == m2.inits && m1.ops == m2.ops;
 	}
 
 	bool operator!=(const Module &m1, const Module &m2) {

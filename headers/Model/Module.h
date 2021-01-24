@@ -8,7 +8,7 @@
 #include <unordered_set>
 #include <vector>
 #include "Type.h"
-#include "Statements/StatementOwner.h"
+#include "../Statements/StatementOwner.h"
 #include <memory>
 
 namespace Modeling {

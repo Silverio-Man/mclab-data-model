@@ -48,7 +48,7 @@ namespace Modeling {
 	}
 
 	bool operator==(const OperationArg &o1, const OperationArg &o2) {
-		return o1.name == o2.name and o1.type == o2.type and o1.op == o2.op;
+		return o1.name == o2.name && o1.type == o2.type && o1.op == o2.op;
 	}
 
 	bool operator!=(const OperationArg &o1, const OperationArg &o2) {

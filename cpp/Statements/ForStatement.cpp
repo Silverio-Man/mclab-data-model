@@ -17,9 +17,9 @@ namespace Statements {
 	ForStatement::ForStatement(std::shared_ptr<Modeling::Expression> b, std::shared_ptr<Modeling::Expression> s,
 							   std::shared_ptr<Modeling::Expression> u, std::shared_ptr<Statement> stat)
 			: NestedStatement(), begin(std::move(b)), step(std::move(s)), upTo(std::move(u)) {
-		if (begin->getType().lock()->getName() != "Real" and begin->getType().lock()->getName() != "Integer" and
-			step->getType().lock()->getName() != "Real" and step->getType().lock()->getName() != "Integer" and
-			upTo->getType().lock()->getName() != "Real" and upTo->getType().lock()->getName() != "Integer")
+		if (begin->getType().lock()->getName() != "Real" && begin->getType().lock()->getName() != "Integer" &&
+			step->getType().lock()->getName() != "Real" && step->getType().lock()->getName() != "Integer" &&
+			upTo->getType().lock()->getName() != "Real" && upTo->getType().lock()->getName() != "Integer")
 			throw ForIndexException();
 		else if (stat->getOwner().lock() != nullptr)
 			throw StatementOwnerException();

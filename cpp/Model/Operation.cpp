@@ -52,7 +52,7 @@ namespace Modeling {
 	}
 
 	bool operator==(const Operation &op, const Operation &op2) {
-		return op.name == op2.name and op.args == op2.args and op.ret == op2.ret;
+		return op.name == op2.name && op.args == op2.args && op.ret == op2.ret;
 	}
 
 	bool operator!=(const Operation &op, const Operation &op2) {

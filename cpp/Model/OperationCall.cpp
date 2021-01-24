@@ -15,7 +15,7 @@ namespace Modeling {
 			: Expression(std::move(t)), refers(std::move(op)) {
 		if (refers->getReturnType().lock() != getType().lock())
 			throw OperationTypeException();
-		else if (std::dynamic_pointer_cast<UserDefOp>(refers).get() and
+		else if (std::dynamic_pointer_cast<UserDefOp>(refers).get() &&
 				 std::dynamic_pointer_cast<UserDefOp>(refers).get()->getModule().lock()->getModExpr().count(shared_from_this()) ==
 				 0)
 			throw OpNotInModException(op->getName());
@@ -38,7 +38,7 @@ namespace Modeling {
 	}
 
 	bool operator==(const OperationCall &o1, const OperationCall &o2) {
-		return o1.args == o2.args and o1.refers == o2.refers;
+		return o1.args == o2.args && o1.refers == o2.refers;
 	}
 
 	bool operator!=(const OperationCall &o1, const OperationCall &o2) {

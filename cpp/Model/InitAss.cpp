@@ -33,7 +33,7 @@ namespace Modeling {
 	}
 
 	bool operator==(const InitAss &l1, const InitAss &l2) {
-		return l1.var == l2.var and l1.mod == l2.mod;
+		return l1.var == l2.var && l1.mod == l2.mod;
 	}
 
 	bool operator!=(const InitAss &l1, const InitAss &l2) {

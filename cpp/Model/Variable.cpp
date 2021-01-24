@@ -91,7 +91,7 @@ namespace Modeling {
 	}
 
 	bool operator==(const Variable &v1, const Variable &v2) {
-		return v1.name == v2.name and v1.mod == v2.mod and v1.type == v2.type;
+		return v1.name == v2.name && v1.mod == v2.mod && v1.type == v2.type;
 	}
 
 	bool operator!=(const Variable &v1, const Variable &v2) {

@@ -8,7 +8,7 @@
 namespace Modeling {
 
 	BaseType::BaseType(const std::string &n) : Type(n) {
-		if ((n.compare("Boolean")) != 0 and (n.compare("Real")) != 0 and (n.compare("Integer")) != 0 and
+		if ((n.compare("Boolean")) != 0 && (n.compare("Real")) != 0 && (n.compare("Integer")) != 0 &&
 			(n.compare("String")) != 0)
 			throw BaseTypeException(n);
 		else

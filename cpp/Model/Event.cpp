@@ -45,7 +45,7 @@ namespace Modeling {
 	}
 
 	void Event::setDelay(std::shared_ptr<Expression> &d) {
-		if (delay->getType().lock()->getName() != "Real" and delay->getType().lock()->getName() != "Integer")
+		if (delay->getType().lock()->getName() != "Real" && delay->getType().lock()->getName() != "Integer")
 			throw DelayTypeException();
 		else
 			delay = d;
@@ -56,7 +56,7 @@ namespace Modeling {
 	}
 
 	void Event::setPriority(std::shared_ptr<Expression> &p) {
-		if (priority->getType().lock()->getName() != "Real" and priority->getType().lock()->getName() != "Integer")
+		if (priority->getType().lock()->getName() != "Real" && priority->getType().lock()->getName() != "Integer")
 			throw PriorityTypeException();
 		else
 			priority = p;
@@ -99,8 +99,8 @@ namespace Modeling {
 	}
 
 	bool operator==(const Event &e1, const Event &e2) {
-		return e1.trigger == e2.trigger and e1.delay == e2.delay and e1.persistent == e2.persistent and
-			   e1.priority == e2.priority and e1.assignment == e2.assignment and e1.mod == e2.mod;
+		return e1.trigger == e2.trigger && e1.delay == e2.delay && e1.persistent == e2.persistent &&
+			   e1.priority == e2.priority && e1.assignment == e2.assignment && e1.mod == e2.mod;
 	}
 
 	bool operator!=(const Event &e1, const Event &e2) {

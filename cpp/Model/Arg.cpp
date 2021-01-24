@@ -26,7 +26,7 @@ namespace Modeling {
 	}
 
 	bool operator==(const Arg& a1, const Arg& a2) {
-	    return &a1.opCall == &a2.opCall and a1.arg == a2.arg;
+	    return &a1.opCall == &a2.opCall && a1.arg == a2.arg;
 	}
 
 	bool operator!=(const Arg &a1, const Arg &a2) {
