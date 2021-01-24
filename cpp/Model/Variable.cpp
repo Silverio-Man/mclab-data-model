@@ -124,8 +124,8 @@ namespace Modeling {
 		initialAss = std::move(initAss);
 	}
 
-	const std::string Variable::getInitialAss() {
-		return initialAss.empty() ? throw "No initial assignment for this variable." : initialAss;
-	}
+	// const std::string Variable::getInitialAss() {
+	// 	return initialAss.empty() ? throw "No initial assignment for this variable." : initialAss;
+	// }
 
 }
